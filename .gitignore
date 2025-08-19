@@ -1,0 +1,12 @@
+# Test files for development
+test_*.csv
+test_simulation.py
+ENHANCEMENT_DOCUMENTATION.md
+
+# Build artifacts
+*.ex4
+*.log
+
+# Temporary files
+*.tmp
+*.bak
