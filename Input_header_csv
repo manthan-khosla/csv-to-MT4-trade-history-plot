@@ -1,0 +1,19 @@
+
+mql5 signal export format 
+Time;Type;Volume;Symbol;Price;S/L;T/P;Time;Price;Commission;Swap;Profit;Comment
+2025.08.13 12:26:40;Sell;0.02;AUDCAD;0.90184;0.93185;0.89885;2025.08.14 15:14:55;0.89885;-0.14;-0.20;4.34;[tp]
+2025.08.13 12:25:33;Sell;0.02;NZDCAD;0.82394;0.85390;0.82090;2025.08.14 09:03:54;0.82090;-0.14;-0.14;4.42;[tp]
+
+myfxblue export format
+Tags,Open Date,Close Date,Symbol,Action,Units/Lots,SL,TP,Open Price,Close Price,Commission,Swap,Pips,Profit,Gain,Comment,Magic Number,Duration (DD:HH:MM:SS),Profitable(%),Profitable(time duration),Drawdown,Risk:Reward,Max(pips),Max(USD),Min(pips),Min(USD),Entry Accuracy(%),Exit Accuracy(%),ProfitMissed(pips),ProfitMissed(USD)
+,08/14/2025 03:30,08/14/2025 04:00,XAUUSD,Sell,0.100,3369.94000,3342.00000,3373.65000,3369.94000,-0.7000,0.0000,371.0,36.40,1.38,"31.65000000",47836541,00:00:29:37,3.4,1m,0.0,0.00,371.0,37.1,0.0,0.0,100.0,100.0,0.00,0.00
+,08/13/2025 21:02,08/13/2025 22:28,XAUUSD,Buy,0.100,3355.96000,3372.84000,3351.96000,3355.96000,-0.7000,0.0000,400.0,39.30,1.51,"20.88000000",47836541,00:01:26:35,1.2,1m,0.0,0.00,400.0,40.0,0.0,0.0,100.0,100.0,0.00,0.00
+
+
+fx blue export format
+sep=,
+Type,Ticket,Symbol,Lots,Buy/sell,Open price,Close price,Open time,Close time,Open date,Close date,Profit,Swap,Commission,Net profit,T/P,S/L,Pips,Result,Trade duration (hours),Magic number,Order comment,Account
+Open position,186158854,EURUSD.i,0.25,Buy,1.16812,1.16577,2025/08/18 11:00:00,1970/01/01 00:00:00,2025/08/18,1970/01/01,-58.75,-2.66,0,-61.41,0,0,-23.5,Loss,0,123,,market_master
+Deposit,172152725,,0,,0,0,2025/02/11 15:49:24,2025/02/11 15:49:24,2025/02/11,2025/02/11,10000,0,0,10000,0,0,0,n/a,0,0,,market_master
+Closed position,172507920,EURUSD.i,0.25,Buy,1.04744,1.04864,2025/02/17 11:00:00,2025/02/17 12:46:44,2025/02/17,2025/02/17,30,0,-1.75,28.25,0,0,12.0,Win,1.78,123,,market_master
+Closed position,172575367,EURUSD.i,0.25,Buy,1.04663,1.04457,2025/02/18 04:00:00,2025/02/20 13:03:20,2025/02/18,2025/02/20,-51.5,-7.26,-1.75,-60.51,0,0,-20.6,Loss,57.06,123,,market_master
