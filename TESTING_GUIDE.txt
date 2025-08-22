@@ -1,0 +1,72 @@
+TESTING GUIDE FOR LOCAL TRADES MODE
+===================================
+
+PREREQUISITES
+-------------
+- MT4 terminal with some closed trade history
+- The updated trades_csv_to_mt4_chart.mq4 indicator
+
+TESTING STEPS
+-------------
+
+1. CSV Mode Compatibility Test (Backward Compatibility)
+   - Install the updated indicator
+   - Ensure bUseLocalTrades is set to false (default)
+   - Place a CSV file in MT4 Files folder
+   - Attach indicator to chart
+   - Verify it works exactly as before
+
+2. Local Trades Mode Basic Test
+   - Set bUseLocalTrades to true
+   - Keep other settings as default
+   - Attach indicator to chart
+   - Verify it loads trades from MT4 terminal history
+   - Check chart comment shows "LOCAL TRADES LOADING COMPLETE"
+   - Verify trades are plotted with arrows and lines
+
+3. Symbol Filtering Test
+   - Set bCurrentSymbolOnly to true
+   - Attach to different symbol charts
+   - Verify only trades for that symbol are shown
+   - Set bCurrentSymbolOnly to false
+   - Verify all symbols are shown
+
+4. Date Range Filtering Test
+   - Set iHistoryDays to 30
+   - Verify only last 30 days of trades are loaded
+   - Set custom dtStartDate and dtEndDate
+   - Verify only trades in that range are shown
+
+5. Order Type Filtering Test
+   - Toggle bBuy, bSell, bBuyLimit, etc.
+   - Verify corresponding trade types are shown/hidden
+
+6. Large History Performance Test
+   - Test with account having 1000+ trades
+   - Verify loading completes without errors
+   - Check memory usage is reasonable
+
+EXPECTED RESULTS
+----------------
+- Backward compatibility: CSV mode works unchanged
+- Local mode: Shows MT4 terminal history
+- Filtering: Works correctly for symbol, date, and order type
+- Performance: Handles large histories efficiently
+- UI: Chart comments show correct data source and statistics
+- Visualization: Same arrows, lines, and colors as CSV mode
+
+TROUBLESHOOTING
+---------------
+- If no trades appear: Check if MT4 has closed trade history
+- If wrong symbol trades shown: Verify bCurrentSymbolOnly setting
+- If too many trades: Use date filtering to limit scope
+- If CSV mode broken: Check file path and format
+
+SUCCESS CRITERIA
+-----------------
+✓ CSV mode still works (backward compatibility)
+✓ Local mode loads MT4 history
+✓ All filtering options work correctly
+✓ Visualization is identical between modes
+✓ Performance is acceptable for large histories
+✓ UI feedback clearly shows data source and statistics
