@@ -1,0 +1,27 @@
+# MT4 compiled files
+*.ex4
+
+# Backup files  
+*_original.mq4
+*_backup.mq4
+*.bak
+
+# Temporary files
+*_utf8.mq4
+*_temp.mq4
+*_new.mq4
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
